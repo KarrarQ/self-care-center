@@ -4,5 +4,98 @@ light-yellow - #f7e4bf;
 light-blue - #78a7c6;
 dark-blue - #134d71;
 white - #ffffff;
-black - #000000;
-*/
+black - #000000; */
+
+body, html {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(#134d71, #78a7c6, #f7e4bf);
+  position: absolute;
+  font-family: "Quicksand", sans-sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1{
+  font-size:30px;
+  margin-bottom: 80px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+div > label {
+  margin: 15px 60px 0px 0px;
+  padding-top: 10px;
+}
+
+div {
+ background-color: #ffffff;
+ border-radius: 10px;
+ padding: 15px;
+ padding-bottom: 5px;
+ width: 515px;
+ text-align: center;
+ margin-bottom: 100px;
+ align-items: center;
+}
+
+input {
+ margin-left: 60px;
+}
+
+img {
+ height: 80px;
+ width: 80px;
+ padding-top: 5px;
+}
+
+.header, .which-method, .receive-message, .add-message, .submit, .clear-message {
+  color: white;
+}
+
+.receive-message, .add-message, .submit, .clear-message {
+  background-color:#134d71;
+  padding: 5px 30px;
+  margin: 5px;
+  margin-top: 10px;
+  border-style: none;
+  border-radius: 5px;
+}
+
+.view-message-area {
+  padding-top: 15px;
+  font-size: large;
+}
+
+.display-box {
+  width: 780px;
+  height: 100px;
+  padding-bottom: 20px;
+}
+
+.custom-message {
+ margin-top: -30px;
+}
+
+.message-input {
+  width: 600px;
+  padding: 10px 10px;
+  margin: 10px 5px;
+  border-width: 1px;
+  border-radius: 5px;
+}
+
+.input-error, .receive-error {
+  color: red;
+  text-emphasis: bold, italic;
+}
+
+.hidden {
+  display: none!important;
+}
