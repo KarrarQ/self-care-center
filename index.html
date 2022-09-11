@@ -1,44 +1,29 @@
-
-
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
   <head>
-    <link rel='stylesheet' href='styles.css'>
-    <link href='https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <title>Self Care Center</title>
   </head>
   <body>
-    <main>
-      <h1 class='header'>✨ Self Care Center ✨</h1>
-      <h2 class='which-method'>Which type of message?</h2>
-      <div class='choices'>
-        <input type='radio' name='rad1' value='affirmation' id='show-affirmation'>
-        <label for='show-affirmation'>affirmation</label>
-        <input type='radio' name='rad1' value='mantra' id='show-mantra'>
-        <label for='show-mantra'>mantra</label>
-        <br>
-        <button class='receive-message'>Receive Message</button>
+    <h1>✨ Self Care Center ✨</h1>
+    <h2>Which type of message?</h2>
+    <section class= "input-form">
+      <div>
+        <input class="input-affirmation" type="radio" id="affirmation" name="type-of-message" value="affirmation">
+        <label class="label-affirmation" for="affirmation">affirmation</label>
+        <input class="input-mantra" type="radio" id="mantra" name="type-of-message" value="mantra">
+        <label class="label-mantra" for="mantra">mantra</label>
       </div>
-      <div class='display-box'>
-        <p class='view-message-area hidden'></p>
-        <img src='./assets/meditate.svg' alt='tranquil ringing bell.'>
-        <span class="receive-error hidden">Error! You must choose affirmation or mantra.</span>
-        <form class="custom-message hidden">
-          <input type='radio' name='rad2' value='affirmation' id='create-affirmation'>
-          <label for='create-affirmation'>Add an affirmation</label>
-          <input type='radio' name='rad2' value='mantra' id='create-mantra'>
-          <label for='create-mantra'>Add a mantra</label>
-          <br>
-          <input type='text' class='message-input' id='user-message' placeholder='Type your message here!'>
-          <input type='submit' class='submit'>
-          <label for='user-message' class='input-error hidden'>Error! You must choose affirmation or mantra.</label>
-        </form>
+      <div>
+        <button class="message-button">Recieve Message</button>
+        <button class="clear-button">Clear Message</button>
       </div>
-      <span>
-        <button class='add-message'>Add Message</button>
-        <button class='clear-message hidden'>Clear Message</button>
-      </div>
-    </span>
-    <script type='text/javascript' src='data.js'></script>
-    <script type='text/javascript' src='main.js'></script>
+    </section>
+    <section class="message-field">
+      <img class="meditation-image" src="assets/meditate.svg" alt="meditate">
+      <p class="message hidden">Message</p>
+    </section>
+    <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
