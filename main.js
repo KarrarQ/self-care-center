@@ -4,6 +4,8 @@ var messageButton = document.querySelector(".message-button");
 var clearButton = document.querySelector(".clear-button");
 var meditationImage = document.querySelector(".meditation-image");
 var message = document.querySelector(".message");
+var deleteMessageBtn = document.querySelector('#delete-button');
+
 
 var affirmations = [
   "I forgive myself and set myself free.",
@@ -41,6 +43,7 @@ var mantras = [
 
 messageButton.addEventListener('click', showRandomMessage);
 clearButton.addEventListener('click', clearMessage);
+
 
 function showRandomMessage() {
   if (affirmationRadio.checked) {
