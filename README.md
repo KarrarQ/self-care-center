@@ -17,6 +17,8 @@
 
 ## Images
 The Main Page
+<img width="1440" alt="Screen Shot 2022-09-11 at 12 22 45 PM" src="https://user-images.githubusercontent.com/108508596/189549882-7ee928d5-663f-4d9f-be53-3e5964e10df1.png">
+
 
 ## Context:
 I am currently on my third week of Mod1. Self Care Center took me three days with over 20 hours to finish.
